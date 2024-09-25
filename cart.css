@@ -1,0 +1,190 @@
+body{
+    margin: 0;
+    
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+#logo {
+    margin-left: 2em;
+    width: 60vh;
+    top: 30%;
+}
+
+img#logo{
+    width: 40vh;
+    top: 100px;
+    margin-top: 20%;
+}
+
+header {
+    background-color: #ffffff;
+    width: 100%;
+    height: 4em;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 0 100px; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+h1 {
+    margin-right: 2em; /* Margem à direita do título */
+    font-family: 'graduate', serif;
+    color: #BF4417;
+    font-size: 30px;
+}
+
+
+
+#carrinho {
+    background-color: #ffffff9f;
+    max-width: 50%;
+    height: auto;
+    border-radius: 20px;
+    margin: 8em auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.655);
+    padding: 19px;
+    display: flex;
+    flex-direction: column; /* Produtos dispostos em coluna */
+    
+}
+
+.product {
+    background-color: rgba(255, 255, 255, 0.793);
+    margin-bottom: 14px;
+    padding: 20px; /* Ajuste conforme necessário */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Espaça horizontalmente */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 100px; /* Altura fixa para uniformidade */
+}
+
+.product img {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    margin-right: 20px; /* Espaço entre imagem e texto */
+}
+
+.title,
+.preco {
+    margin: 0;
+    font-family: "Graduate", serif;
+    text-align: left; /* Alinha o texto à esquerda */
+    width: 100%; /* Faz com que ocupem o espaço disponível */
+}
+
+.title {
+    font-size: 20px;
+    
+    
+}
+
+.preco {
+    font-size: 16px;
+    margin-top: 5px; /* Adiciona um espaço acima do preço */
+    padding: 10px;
+}
+
+.total {
+    padding: 15px;
+}
+
+.icones-adicionar-remover {
+    display: flex;
+    flex-direction: row; /* Botões na horizontal */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 10px; /* Espaço entre botões */
+}
+
+.btn,
+.remover-produto {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn:hover,
+.remover-produto:hover {
+    background-color: #e0e0e0;
+    border-color: #ccc;
+}
+
+.remover-produto {
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+}
+
+.remover-produto:hover {
+    background-color: #ff4c4c;
+}
+
+
+
+.valor-total {
+    position: fixed; /* Mantém a div fixa na tela */
+    top: 20%; /* Distância do topo como porcentagem da altura da tela */
+    right: -2%; /* Distância da borda direita como porcentagem da largura da tela */
+    background-color: #ebebebad; /* Cor de fundo */
+    height: auto; /* Permite que a altura se ajuste ao conteúdo */
+    width: 400px; /* Largura da div */
+    border-radius: 20px; /* Bordas arredondadas */
+    font-family: "Graduate", serif; /* Fonte */
+    display: flex; /* Usando flexbox */
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    padding: 20px; /* Adiciona preenchimento */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    z-index: 1000; /* Certifica que fique acima de outros elementos */
+}
+
+
+
+
+
+.valor-total h3 {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    font-size: 25px;
+    color: #BF4417;
+}
+
+.valor-total p {
+    display: flex;
+   
+    margin-left: 30px;
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(5, 0, 79);
+    flex-grow: 1; /* Permite que o parágrafo ocupe o espaço restante */
+}
+
+.confirmar-pedido {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    background-color: #BF4417;
+    font-family: "Graduate", serif;
+    font-size: 15px;
+    color: azure;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.confirmar-pedido:hover {
+  
+    transform: scale(1.05); /* Aumenta um pouco o tamanho do botão */
+}

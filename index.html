@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Atlética SENAI</title>
+</head>
+<body>
+
+    <!----Header---->
+
+    <div id="navbar">
+        <a href="index.html"><img id="logo" src="img/logo.png"></a>
+        <div id="middle">
+            
+            <div id="bar">
+                <input type="text" placeholder="O que você está procurando?">
+                <button type="submit"><img src="img/search.png"></button>
+            </div>
+            
+            <div id="categ">
+                <div id="mar">
+                    <a href="marmita.html">Marmita</a>
+                    <div id="drop-1">
+                        <a class="marmita" href="bento.html">Bento</a>
+                        <a class="marmita" href="container.html">Pote Hermético</a>
+                        <a class="marmita" href="cutlery.html">Talheres</a>
+                        <a class="marmita" href="mug.html">Canecas</a>
+                        <a class="marmita" href="bottle.html">Garrafas Térmicas</a>
+                        <a class="marmita" href="shaker.html">Coqueteleiras</a>
+                        <a class="marmita" href="cooler.html">Bolsas Térmicas</a>
+                    </div>
+                </div>
+                <div id="apparel">
+                    <a href="apparel.html">Apparel</a>
+                    <div id="drop-2">
+                        <a class="marmita" href="moletom.html">Moletom</a>
+                        <a class="marmita" href="camiseta.html">Camiseta</a>
+                        <a class="marmita" href="bone.html">Boné</a>
+                        <a class="marmita" href="ecobag.html">Eco-Bag</a>
+                        <a class="marmita" href="meia.html">Meia</a>
+                        <a class="marmita" href="keychain.html">Chaveiro</a>
+                        <a class="marmita" href="keystring.html">Cordão</a>
+                    </div>
+                </div>
+
+                <div id="papel">
+                    <a href="papelaria.html">Papelaria</a>
+                    <div id="drop-3">
+                        <a class="marmita" href="notebook.html">Caderno</a>
+                        <a class="marmita" href="notepad.html">Bloco de Notas</a>
+                        <a class="marmita" href="pen.html">Caneta</a>
+                        <a class="marmita" href="lapiseira.html">Lapiseira</a>
+                        <a class="marmita" href="estojo.html">Estojo</a>
+                        <a class="marmita" href="mousepad.html">Mouse Pad</a>
+                        <a class="marmita" href="stickers.html">Adesivos</a>
+
+                    </div>
+                </div>
+
+                <div id="mission">
+                    <a href="about.html">Sobre Nós</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="client">
+            <a><img src="img/whats.png" style="width: 7vh;"></a>
+            <a><p>Olá, visitante</p><img src="img/user.png"></a>
+            <a><img src="img/wish-add.png"></a>
+            <a href="cart.html"><img src="img/basket.png"></a>
+            
+        </div>
+
+
+    </div>
+    
+    <div class="popup-overlay" id="popupOverlay">
+
+        <div class="popup" id="popup">
+    
+            <span class="close" id="closePopup">&times;</span>
+    
+            <div class="popup-content">
+    
+                <img src="img/intro.png" style="width: 140vh;">
+    
+            </div>
+    
+        </div>
+    
+    </div>
+    <script src="seila.js"></script>
+    <script src="script.js"></script>
+    <div id="content">
+
+
+
+        <div id="novidades">
+            <h1>Novidades!<img src="img/mega.png"></h1>
+            <div class="produto">
+                <div class="shop">
+                    <a href="camiseta.html"><img src="img/tshirt-logo.png" class="image"></a>
+                    <a class="title" href="tshirt.html"><p href="tshirt.html">Camiseta Oldschool</p></a>
+                    <p class="price">R$20,99</p>
+                    <button type="button" class="button" onclick="adicionarAoCarrinho('Camiseta', 20.99, 'img/tshirt-logo.png')"><img src="img/add.png" style="cursor: pointer;"></button>
+                </div>
+                <div class="shop">
+                    <a href="bottle.html"><img src="img/bottle-blue.png"></a>
+                    <a class="title" href="bottle.html"><p>Garrafa</p></a>
+                    <p class="price">R$30,99</p>
+                    <button type="button" class="button" onclick="adicionarAoCarrinho('Garrafa', 30.99, 'img/bottle-blue.png')"><img src="img/add.png" style="cursor: pointer;"></button>
+                </div>
+                <div class="shop">
+                    <a href="mug.html"><img src="img/mug-1.png"></a>
+                    <a class="title" href="mug-1.html"><p >Caneca</p></a>
+                    <p class="price">R$43,99</p>
+                    <button type="button" class="button" onclick="adicionarAoCarrinho('Caneca', 43.99,  'img/mug-1.png')"><img src="img/add.png" style="cursor: pointer;"></button>
+                </div>
+            </div>
+        </div>
+
+        <div id="best">
+            <h1>Mais Vendidos!<img src="img/trophy.png"></h1>
+            <div class="produto">
+                <div class="shop">
+                    <a href="ecobag.html"><img src="img/totebag-1.png"></a>
+                    <a class="title" href="ecobag.html"><p class="title">EcoBag</p></a>
+                    <p class="price">R$20,99</p>
+                    <button type="button" class="button" onclick="adicionarAoCarrinho('EcoBag', 20.99, 'img/totebag-1.png')"><img src="img/add.png" style="cursor: pointer;"></button> 
+                </div>
+                <div class="shop">
+                    <a href="moletom.html"><img src="img/hoodie-f.png"></a>
+                    <a class="title" href="moletom.html"><p class="title">Moletom Canguru</p></a>
+                    <p class="price">R$145,99</p>
+                    <button type="button" class="button" onclick="adicionarAoCarrinho('Moletom Canguru', 145.99, 'img/hoodie-f.png')"><img src="img/add.png" style="cursor: pointer;"></button> 
+                </div>
+                <div class="shop">
+                    <a href="tshirt.html"><img src="img/tshirt-logo.png"></a>
+                    <a  href="tshirt.html" class="title"><p class="title">Camiseta Oldschool</p></a>
+                    <p class="price">R$20,99</p>
+                    <button type="button" class="button" onclick="adicionarAoCarrinho('Camiseta', 30.99, 'img/tshirt-logo.png')"><img src="img/add.png" style="cursor: pointer;"></button> 
+                </div>
+            </div>
+        </div>
+
+        <div id="limited">
+            <h1 style="display: flex; align-items: center;">Edição Limitada!<img src="img/time.png"  style="padding-left: 2vh;"></h1>
+            <div class="produto">
+                <div class="shop">
+                    <a href="shaker.html"><img src="img/shaker-1.png"></a>
+                    <a class="title" href="shaker.html"><p class="title">Shaker Branco</p></a>
+                    <p class="price">R$45,99</p>
+                    <button type="button" class="button" onclick="adicionarAoCarrinho('Shaker Branco', 45.99, 'img/shaker-1.png')"><img src="img/add.png" style="cursor: pointer;"></button> 
+                </div>
+                <div class="shop">
+                    <a href="shaker.html"><img src="img/shaker-2.png"></a>
+                    <a class="title" href="shaker.html"><p class="title">Shaker Vermelho</p></a>
+                    <p class="price">R$45,99</p>
+                    <button type="button" class="button" onclick="adicionarAoCarrinho('Shaker Preto', 45.99, 'img/shaker-2.png')"><img src="img/add.png" style="cursor: pointer;"></button>  
+                </div>
+                <div class="shop">
+                    <a href="shaker.html"><img src="img/shaker-3.png"></a>
+                    <a class="title" href="shaker.html"><p class="title">Shaker Preto</p></a>
+                    <p class="price">R$45,99</p>
+                    <button type="button" class="button" onclick="adicionarAoCarrinho('Shaker Vermelho', 45.99, 'img/shaker-3.png')"><img src="img/add.png" style="cursor: pointer;"></button> 
+                </div>
+            </div>
+        </div>
+
+        <div id="newsletter">
+            <h1 style="display: flex; align-items: center;">Receba Novidades!<img src="img/news.png" style="padding-left: 2vh;"></h1>
+            <div id="news">
+            <div id="box" style="margin-top: 2vh; align-content: center;">
+                <label>Nome:</label>
+                <input type="text"><br>
+                <label>e-mail:</label>
+                <input type="email" style="margin-right: 2vh;"><br>
+                <img src="img/robot.png" style="width: 7vh; margin-left: 5vh; margin-right:0; float:left;">
+                <input type="submit" id="confirmar" value="Confirmar" style="cursor: pointer; margin-right: 6vh;">
+                
+            </div>
+            <div id="pose">
+                <img src="img/pose.png">
+            </div>
+
+            </div>
+            
+        </div>
+
+        <div id="apoio">
+            <h1 style="display: flex; align-items: center;">Apoio!<img src="img/flag-3.png" style="width: 15vh;"></h1>
+            <div id="apoio-2">
+                <img src="img/senai.png">
+                <img src="img/sebrae.png">
+                <img src="img/fiesp.png">
+                <img src="img/monster.png">
+                <img src="img/doritos.png">
+                <img src="img/pringles.png">
+                <img src="img/toddy.png">
+            </div>
+        </div>
+    
+    </div>
+    <footer>
+        <div id="foot-1">
+            <h3>Institucional</h3>
+            <a href="#">Sobre a Atlética</a><br><br>
+            <a href="#">Segurança</a><br><br>
+            <a href="#">Política de Privacidade</a><br><br>
+            <a href="#">Trabalhe Conosco</a><br>
+        </div>
+
+        <div id="foot-2">
+            <h3>Atendimento ao Cliente</h3>
+            <a href="#">Meus Pedidos</a><br><br>
+            <a href="#">Trocas e Devoluções</a><br><br>
+            <a href="#">Rastreio</a><br><br>
+        </div>
+
+        <div id="foot-3">
+            <h3>Ajuda</h3>
+            <a href="#">E-mail</a><br><br>
+            <a href="#">Chat</a><br>
+        </div>
+
+        <div id="foot-4">
+            <h3>Redes Sociais</h3>
+            <img src="img/instagram.png">
+            <img src="img/youtube.png">
+            <img src="img/x.png">
+        </div>
+
+        <div id="payment">
+            <h3>Métodos de Pagamento</h3>
+            <div id="pay">
+                <img src="img/pix.png">
+                <img src="img/gpay.png">
+                <img src="img/paypal.png">
+                <img src="img/amex.png">
+                <img src="img/elo.png">
+                <img src="img/mastercard.png">
+                <img src="img/visa.png">
+            </div>
+        </div>
+    </footer>   
+</body>
+</html>

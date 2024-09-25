@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+    <title>Carrinho de compras</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img id="logo" src="img/logo.png"></a>
+
+        <h1>CARRINHO DE COMPRAS</h1>
+    </header>
+
+
+    <div class="container">
+        <div id="carrinho">
+             <!-- <div class="product">
+                <img src="img/amex.png" alt="#">
+                <h3 class="nome-do-produto">CAMISETA</h3>
+                <p class="preco">PREÇO: R$14,99</p>
+                <div class="icones-adicionar-remover">
+                    <input type="button" value="+" class="btn" onclick="alterarQuantidade(this, 'add')">
+                    <span class="quantidade-valor">1</span>
+                    <input type="button" value="-" class="btn" onclick="alterarQuantidade(this, 'remove')">
+                    <input type="button" value="Remover Produto" class="remover-produto" onclick="removerProdutoCompleto(this)">
+                </div>
+               
+            </div>
+            <div class="product">
+                <img src="img/bento-2.png" alt="#">
+                <h3 class="nome-do-produto">CAMISETA</h3>
+                <p class="preco">PREÇO: R$10,99</p>
+                <div class="icones-adicionar-remover">
+                    <input type="button" value="+" class="btn" onclick="alterarQuantidade(this, 'add')">
+                    <span class="quantidade-valor">1</span>
+                    <input type="button" value="-" class="btn" onclick="alterarQuantidade(this, 'remove')">
+                    <input type="button" value="Remover Produto" class="remover-produto" onclick="removerProdutoCompleto(this)">
+                </div>
+
+            </div> -->
+         
+        <div class="valor-total">
+            <h3 id="valor-compra">VALOR DA COMPRA</h3>
+            <p class="compra">Valor Total: R$<span id="valor-da-compra">R$00,00</span></p>
+            <button class="confirmar-pedido" onclick="compra()">CONFIRMAR PEDIDO</button>
+        </div>
+    </div>
+    <script src="seila.js"></script>
+</body>
+</html>

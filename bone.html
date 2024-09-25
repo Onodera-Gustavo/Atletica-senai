@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="camiseta.css">
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Atlética SENAI</title>
+</head>
+<body>
+<script src="seila.js"></script>
+    <!----Header---->
+    <div id="navbar">
+        <a href="index.html"><img id="logo" src="img/logo.png"></a>
+        <div id="middle">
+            
+            <div id="bar">
+                <input type="text" placeholder="O que você está procurando?">
+                <button type="submit"><img src="img/search.png"></button>
+            </div>
+            
+            <div id="categ">
+                <div id="mar">
+                    <a href="marmita.html">Marmita</a>
+                    <div id="drop-1">
+                        <a class="marmita" href="bento.html">Bento</a>
+                        <a class="marmita" href="container.html">Pote Hermético</a>
+                        <a class="marmita" href="cutlery.html">Talheres</a>
+                        <a class="marmita" href="mug.html">Canecas</a>
+                        <a class="marmita" href="bottle.html">Garrafas Térmicas</a>
+                        <a class="marmita" href="shaker.html">Coqueteleiras</a>
+                        <a class="marmita" href="cooler.html">Bolsas Térmicas</a>
+                    </div>
+                </div>
+                <div id="apparel">
+                    <a href="apparel.html">Apparel</a>
+                    <div id="drop-2">
+                        <a class="marmita" href="moletom.html">Moletom</a>
+                        <a class="marmita" href="camiseta.html">Camiseta</a>
+                        <a class="marmita" href="bone.html">Boné</a>
+                        <a class="marmita" href="ecobag.html">Eco-Bag</a>
+                        <a class="marmita" href="meia.html">Meia</a>
+                        <a class="marmita" href="keychain.html">Chaveiro</a>
+                        <a class="marmita" href="keystring.html">Cordão</a>
+                    </div>
+                </div>
+
+                <div id="papel">
+                    <a href="papelaria.html">Papelaria</a>
+                    <div id="drop-3">
+                        <a class="marmita" href="notebook.html">Caderno</a>
+                        <a class="marmita" href="notepad.html">Bloco de Notas</a>
+                        <a class="marmita" href="pen.html">Caneta</a>
+                        <a class="marmita" href="lapiseira.html">Lapiseira</a>
+                        <a class="marmita" href="estojo.html">Estojo</a>
+                        <a class="marmita" href="mousepad.html">Mouse Pad</a>
+                        <a class="marmita" href="stickers.html">Adesivos</a>
+
+                    </div>
+                </div>
+
+                <div id="mission">
+                    <a href="about.html">Sobre Nós</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="client">
+            <a><img src="img/whats.png" style="width: 7vh;"></a>
+            <a><p>Olá, visitante</p><img src="img/user.png"></a>
+            <a><img src="img/wish-add.png"></a>
+            <a href="carrinho.html"><img src="img/basket.png"></a>
+            
+        </div>
+
+
+    </div>
+    <div id="content">
+
+        <div id="slide">
+            <div class="prev"><a class="prev" onclick="plusSlides(-1)" style="cursor: pointer;">&#10094;</a></div>
+            
+            <div class="product">
+                <img src="img/cap-1.png">
+            </div>
+
+            <div class="product">
+                <img src="img/cap-2.png">
+            </div>
+
+            <div class="next"><a class="next" onclick="plusSlides(1)" style="cursor: pointer;">&#10095;</a></div>
+
+        </div>
+
+        <div id="info">
+            <h1>Bolsa Térmica</h1>
+            <div id="size">
+                <button class="size">Preto</button>
+                <button class="size">Trucker</button>
+            </div>
+            <div id="preco"><button type="button" class="button" onclick="adicionarAoCarrinho('Boné', 145.99, 'img/cap-1.png')"><img src="img/add.png" style="cursor: pointer;"></button><h3>R$145,99</h3></div>
+            <div id="frete"></div>
+            <input type="text" style="width: 25vh;" placeholder="Calcule o frete"><button type="submit"><img src="img/shipping.png"  style="width: 5vh;"></button>
+        </div>
+        
+        </div>
+    </div>
+        
+    <div id="about">
+        <div id="sobre">
+            
+            <h1>Boné</h1><br>
+            <p class="descrip"><b>Material:</b>Lona</p>
+            <p class="descrip"><b>Tamanho: </b>Ajustável</p><br>
+            <p class="descrip">Boné snapback com logos ddo SENAI e Atlética . </p>
+    
+        </div>
+    </div>
+
+    <script src="slide.js">
+    </script>
+
+<footer>
+    <div id="foot-1">
+        <h3>Institucional</h3>
+        <a href="#">Sobre a Atlética</a><br><br>
+        <a href="#">Segurança</a><br><br>
+        <a href="#">Política de Privacidade</a><br><br>
+        <a href="#">Trabalhe Conosco</a><br>
+    </div>
+
+    <div id="foot-2">
+        <h3>Atendimento ao Cliente</h3>
+        <a href="#">Meus Pedidos</a><br><br>
+        <a href="#">Trocas e Devoluções</a><br><br>
+        <a href="#">Rastreio</a><br><br>
+    </div>
+
+    <div id="foot-3">
+        <h3>Ajuda</h3>
+        <a href="#">E-mail</a><br><br>
+        <a href="#">Chat</a><br>
+    </div>
+
+    <div id="foot-4">
+        <h3>Redes Sociais</h3>
+        <img src="img/instagram.png">
+        <img src="img/youtube.png">
+        <img src="img/x.png">
+    </div>
+
+    <div id="payment">
+        <h3>Métodos de Pagamento</h3>
+        <div id="pay">
+            <img src="img/pix.png">
+            <img src="img/gpay.png">
+            <img src="img/paypal.png">
+            <img src="img/amex.png">
+            <img src="img/elo.png">
+            <img src="img/mastercard.png">
+            <img src="img/visa.png">
+        </div>
+    </div>
+</footer>   
+</body>
+</html>
